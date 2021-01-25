@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '2e$j7b#se7gind%2%#xyn2dlli$@&j@mln_qy%rp-dp9974pd8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['tlmodularmadness.herokuapp.com/ ']
 
