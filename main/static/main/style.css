@@ -1,0 +1,23 @@
+body {
+    background: url("images/main_background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 41%;
+    transform: translate(-5%, -5%);
+}
+
+.button_welcome {
+    position: fixed;
+    top: 110%;
+    left: 35%;
+    font-size: 14px;
+}

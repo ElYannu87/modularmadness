@@ -1,0 +1,27 @@
+<!doctype html>
+{% load static %}
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Modular Madness</title>
+  <link rel="stylesheet" href="{% static 'menu/style.css' %}">
+</head>
+<body>
+  <a href="{% url 'main:index' %}"><img id="small_logo" src="{% static 'menu/images/Modularmadness.png' %}"></a>
+    <div class="modules_title">
+      <h1>Les modules</h1>
+    </div>
+    <div class="menu_list">
+        {% for modules in module %}
+        <div class="menu_list_item">
+          <span class="menu_list_title">{{modules.nom}}</span>
+          <span class="menu_list_prix">{{modules.prix | floatformat:2}} €</span>
+          <span class="menu_list_fonction">{{modules.fonction}}</span>
+          {% if modules.eurorack  %}
+            <span class="menu_list_badge">Eurorack</span>
+          {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

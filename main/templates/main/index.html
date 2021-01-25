@@ -1,0 +1,17 @@
+<!doctype html>
+{% load static %}
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Modular Madness</title>
+  <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <div class="centered">
+        <img id="main_logo" src="{% static 'main/images/main_logo.png' %}">
+        <di class="button_welcome">
+            <a href="{% url 'modules:index' %}">Voir les modules</a>
+        </di>
+    </div>
+</body>
+</html>
